@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cb6e28fb-dacd-403d-9e3d-8a9b5e1e38fe" solutionId="cb6e28fb-dacd-403d-9e3d-8a9b5e1e38fe" resetWebServer="false" name="ik.SharePoint2010.ConditionalLookup" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="fe13dfba-3cd8-4170-ab2f-d45a6788ca16" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d72ac22d-f644-43d0-9079-72217fc88150" />
+    <projectItemReference itemId="44c9402e-073a-4dbd-869b-7893b43c3646" />
+  </projectItems>
+</package>

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ik.SharePoint2010.ConditionalLookup", "ConditionalLookupControls\ik.SharePoint2010.ConditionalLookup.csproj", "{9D18F166-6470-4DA6-A212-498A5C3E6C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ik.SharePoint2010.ConditionalLookupTest", "ConditionalLookupTest\ik.SharePoint2010.ConditionalLookupTest.csproj", "{BAAE932A-1435-436F-A6E7-232518D9D374}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06} = {9D18F166-6470-4DA6-A212-498A5C3E6C06}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs18
+		SccProjectUniqueName0 = ConditionalLookupControls\\ik.SharePoint2010.ConditionalLookup.csproj
+		SccProjectName0 = ConditionalLookupControls
+		SccLocalPath0 = ConditionalLookupControls
+		SccProjectUniqueName1 = ConditionalLookupTest\\ik.SharePoint2010.ConditionalLookupTest.csproj
+		SccProjectName1 = ConditionalLookupTest
+		SccLocalPath1 = ConditionalLookupTest
+		SccLocalPath2 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D18F166-6470-4DA6-A212-498A5C3E6C06}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAE932A-1435-436F-A6E7-232518D9D374}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

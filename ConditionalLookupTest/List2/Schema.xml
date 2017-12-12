@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file is part of Ingo Karstein's Conditional Lookup project
+
+**Do not remove this comment**
+
+Please see the project homepage at CodePlex:
+  http://spconditionallookup.codeplex.com/
+
+Please see my blog:
+  http://ikarstein.wordpress.com
+
+-->
+<List xmlns:ows="Microsoft SharePoint" Title="List2" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ConditionalLookup-List2" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010092DA6C43B67A4665A25C2E2B01FCEDB1">
+        <FieldRefs>
+          <FieldRef ID="{9E36BB8C-CD8C-446E-9A06-A089B654B938}" Name="List2RefToList1FieldA" Required="true"/>
+          <FieldRef ID="{9E36BB8C-CD8C-446E-9A06-A089B654B939}" Name="List2RefToList3FieldA" Required="true"/>
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+          <Field ID="{9E36BB8C-CD8C-446E-9A06-A089B654B938}" DisplayName="Reference to the Main List" Required="True" Name="List2RefToList1FieldA" Type="Lookup" List="Lists/List1" ShowField="List1FieldA"/>
+          <Field ID="{9E36BB8C-CD8C-446E-9A06-A089B654B939}" DisplayName="Reference to the Conditional List" Required="True" Name="List2RefToList3FieldA" Type="Lookup" List="Lists/List3" ShowField="List3FieldA"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="List2RefToList1FieldA"></FieldRef>
+          <FieldRef Name="List2RefToList3FieldA"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="List2RefToList1FieldA" ></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="List2RefToList1FieldA"></FieldRef>
+          <FieldRef Name="List2RefToList3FieldA"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="List2RefToList1FieldA"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="features\$SharePoint.Feature.DeploymentPath$\List2\edit2.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx"  SetupPath="features\$SharePoint.Feature.DeploymentPath$\List2\new2.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

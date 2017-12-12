@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAAE932A-1435-436F-A6E7-232518D9D374}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ik.SharePoint2010.ConditionalLookup.Test</RootNamespace>
+    <AssemblyName>ik.SharePoint2010.ConditionalLookup.Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Feature1\Feature1.EventReceiver.cs">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="List2\Edit2.aspx.cs">
+      <DependentUpon>Edit2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List2\Edit2.aspx.designer.cs">
+      <DependentUpon>Edit2.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List2\New2.aspx.cs">
+      <DependentUpon>New2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List2\New2.aspx.designer.cs">
+      <DependentUpon>New2.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9f47c2c2-65f1-4e31-9a5c-0f2c3b77b666}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List1\List1Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a5f4453-947d-408a-b801-c252a1104a1b}</SharePointProjectItemId>
+    </None>
+    <None Include="List1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2e8bf95-9f15-4e01-aceb-42b2acf364e8}</SharePointProjectItemId>
+    </None>
+    <None Include="List2\List2Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{26c698f3-0a76-4fd1-a7da-3656d7f77fed}</SharePointProjectItemId>
+    </None>
+    <None Include="List2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e326e41f-7fb9-4a33-bee1-a194a87a2bde}</SharePointProjectItemId>
+    </None>
+    <None Include="List3\List3Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{155f3a94-f1c6-4182-857a-85cc14859b83}</SharePointProjectItemId>
+    </None>
+    <None Include="List3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{967ec85d-abd4-4f6b-b92d-8131d40fae18}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{91d8a6a3-f99a-4aec-844e-1e2984620f50}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="RefList\RefListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1722f45b-5ddf-49a8-b735-6b54df0864d5}</SharePointProjectItemId>
+    </None>
+    <None Include="RefList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d33e11d1-0454-4ac9-8eef-db285d4d6285}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="List1\Elements.xml" />
+    <Content Include="List1\List1Instance\Elements.xml" />
+    <Content Include="List1\Schema.xml" />
+    <Content Include="List2\Edit2.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="List2\Elements.xml" />
+    <Content Include="List2\List2Instance\Elements.xml" />
+    <Content Include="List2\New2.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="List2\Schema.xml" />
+    <Content Include="List3\Elements.xml" />
+    <Content Include="List3\List3Instance\Elements.xml" />
+    <Content Include="List3\Schema.xml" />
+    <Content Include="RefList\Elements.xml" />
+    <Content Include="RefList\RefListInstance\Elements.xml" />
+    <Content Include="RefList\Schema.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConditionalLookupControls\ik.SharePoint2010.ConditionalLookup.csproj">
+      <Project>{9D18F166-6470-4DA6-A212-498A5C3E6C06}</Project>
+      <Name>ik.SharePoint2010.ConditionalLookup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

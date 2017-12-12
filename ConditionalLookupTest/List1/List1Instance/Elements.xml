@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file is part of Ingo Karstein's Conditional Lookup project
+
+**Do not remove this comment**
+
+Please see the project homepage at CodePlex:
+  http://spconditionallookup.codeplex.com/
+
+Please see my blog:
+  http://ikarstein.wordpress.com
+
+-->
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="The main list"
+                OnQuickLaunch="TRUE"
+                TemplateType="20000"
+                Url="Lists/List1"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="List1FieldA">List1-Value1</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value2</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value3</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value4</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value5</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value6</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value7</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value8</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value9</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value10</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value11</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value12</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value13</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value14</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value15</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value16</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value17</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value18</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value19</Field>
+        </Row>
+        <Row>
+          <Field Name="List1FieldA">List1-Value20</Field>
+        </Row>
+                <Row>
+          <Field Name="List1FieldA">List1-Value21</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

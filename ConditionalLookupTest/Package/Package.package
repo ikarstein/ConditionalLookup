@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="91d8a6a3-f99a-4aec-844e-1e2984620f50" solutionId="91d8a6a3-f99a-4aec-844e-1e2984620f50" resetWebServer="false" name="ik.SharePoint2010.ConditionalLookupTest" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9f47c2c2-65f1-4e31-9a5c-0f2c3b77b666" />
+  </features>
+</package>
